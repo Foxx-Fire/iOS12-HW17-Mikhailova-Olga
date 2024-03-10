@@ -162,7 +162,7 @@ extension ViewController: ViewProcotol {
         DispatchQueue.main.async {
             if label.isEmpty {
                 self.activity.startAnimating()
-                self.labelBrut.text = bruting
+                self.labelBrut.text = textField
             } else {
                 self.label.text = label
                 self.textField.isSecureTextEntry = false
