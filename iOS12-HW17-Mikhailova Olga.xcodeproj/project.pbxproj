@@ -10,9 +10,11 @@
 		0BC22C242B9E0A0B00EF07AC /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0BC22C232B9E0A0B00EF07AC /* AppDelegate.swift */; };
 		0BC22C262B9E0A0B00EF07AC /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0BC22C252B9E0A0B00EF07AC /* SceneDelegate.swift */; };
 		0BC22C282B9E0A0B00EF07AC /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0BC22C272B9E0A0B00EF07AC /* ViewController.swift */; };
-		0BC22C2B2B9E0A0B00EF07AC /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 0BC22C292B9E0A0B00EF07AC /* Main.storyboard */; };
 		0BC22C2D2B9E0A0D00EF07AC /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 0BC22C2C2B9E0A0D00EF07AC /* Assets.xcassets */; };
 		0BC22C302B9E0A0D00EF07AC /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 0BC22C2E2B9E0A0D00EF07AC /* LaunchScreen.storyboard */; };
+		0BC22C3C2B9E0A5100EF07AC /* Builder.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0BC22C3B2B9E0A5100EF07AC /* Builder.swift */; };
+		0BC22C402B9E0AAF00EF07AC /* PasswordPresenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0BC22C3F2B9E0AAF00EF07AC /* PasswordPresenter.swift */; };
+		0BC22C432B9E0AEF00EF07AC /* BruteFunctionality.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0BC22C422B9E0AEF00EF07AC /* BruteFunctionality.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -20,10 +22,12 @@
 		0BC22C232B9E0A0B00EF07AC /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		0BC22C252B9E0A0B00EF07AC /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
 		0BC22C272B9E0A0B00EF07AC /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
-		0BC22C2A2B9E0A0B00EF07AC /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		0BC22C2C2B9E0A0D00EF07AC /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		0BC22C2F2B9E0A0D00EF07AC /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		0BC22C312B9E0A0D00EF07AC /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		0BC22C3B2B9E0A5100EF07AC /* Builder.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Builder.swift; sourceTree = "<group>"; };
+		0BC22C3F2B9E0AAF00EF07AC /* PasswordPresenter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PasswordPresenter.swift; sourceTree = "<group>"; };
+		0BC22C422B9E0AEF00EF07AC /* BruteFunctionality.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BruteFunctionality.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -56,15 +60,73 @@
 		0BC22C222B9E0A0B00EF07AC /* iOS12-HW17-Mikhailova Olga */ = {
 			isa = PBXGroup;
 			children = (
-				0BC22C232B9E0A0B00EF07AC /* AppDelegate.swift */,
-				0BC22C252B9E0A0B00EF07AC /* SceneDelegate.swift */,
-				0BC22C272B9E0A0B00EF07AC /* ViewController.swift */,
-				0BC22C292B9E0A0B00EF07AC /* Main.storyboard */,
+				0BC22C392B9E0A3700EF07AC /* App */,
+				0BC22C382B9E0A2C00EF07AC /* Sources */,
+				0BC22C372B9E0A2100EF07AC /* Resources */,
+			);
+			path = "iOS12-HW17-Mikhailova Olga";
+			sourceTree = "<group>";
+		};
+		0BC22C372B9E0A2100EF07AC /* Resources */ = {
+			isa = PBXGroup;
+			children = (
 				0BC22C2C2B9E0A0D00EF07AC /* Assets.xcassets */,
 				0BC22C2E2B9E0A0D00EF07AC /* LaunchScreen.storyboard */,
 				0BC22C312B9E0A0D00EF07AC /* Info.plist */,
 			);
-			path = "iOS12-HW17-Mikhailova Olga";
+			path = Resources;
+			sourceTree = "<group>";
+		};
+		0BC22C382B9E0A2C00EF07AC /* Sources */ = {
+			isa = PBXGroup;
+			children = (
+				0BC22C412B9E0AD900EF07AC /* BruteFunctionality */,
+				0BC22C3E2B9E0A9400EF07AC /* PasswordPresenter */,
+				0BC22C3D2B9E0A5600EF07AC /* View */,
+				0BC22C3A2B9E0A4200EF07AC /* Builder */,
+			);
+			path = Sources;
+			sourceTree = "<group>";
+		};
+		0BC22C392B9E0A3700EF07AC /* App */ = {
+			isa = PBXGroup;
+			children = (
+				0BC22C252B9E0A0B00EF07AC /* SceneDelegate.swift */,
+				0BC22C232B9E0A0B00EF07AC /* AppDelegate.swift */,
+			);
+			path = App;
+			sourceTree = "<group>";
+		};
+		0BC22C3A2B9E0A4200EF07AC /* Builder */ = {
+			isa = PBXGroup;
+			children = (
+				0BC22C3B2B9E0A5100EF07AC /* Builder.swift */,
+			);
+			path = Builder;
+			sourceTree = "<group>";
+		};
+		0BC22C3D2B9E0A5600EF07AC /* View */ = {
+			isa = PBXGroup;
+			children = (
+				0BC22C272B9E0A0B00EF07AC /* ViewController.swift */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		0BC22C3E2B9E0A9400EF07AC /* PasswordPresenter */ = {
+			isa = PBXGroup;
+			children = (
+				0BC22C3F2B9E0AAF00EF07AC /* PasswordPresenter.swift */,
+			);
+			path = PasswordPresenter;
+			sourceTree = "<group>";
+		};
+		0BC22C412B9E0AD900EF07AC /* BruteFunctionality */ = {
+			isa = PBXGroup;
+			children = (
+				0BC22C422B9E0AEF00EF07AC /* BruteFunctionality.swift */,
+			);
+			path = BruteFunctionality;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -127,7 +189,6 @@
 			files = (
 				0BC22C302B9E0A0D00EF07AC /* LaunchScreen.storyboard in Resources */,
 				0BC22C2D2B9E0A0D00EF07AC /* Assets.xcassets in Resources */,
-				0BC22C2B2B9E0A0B00EF07AC /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -141,20 +202,15 @@
 				0BC22C282B9E0A0B00EF07AC /* ViewController.swift in Sources */,
 				0BC22C242B9E0A0B00EF07AC /* AppDelegate.swift in Sources */,
 				0BC22C262B9E0A0B00EF07AC /* SceneDelegate.swift in Sources */,
+				0BC22C402B9E0AAF00EF07AC /* PasswordPresenter.swift in Sources */,
+				0BC22C432B9E0AEF00EF07AC /* BruteFunctionality.swift in Sources */,
+				0BC22C3C2B9E0A5100EF07AC /* Builder.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXSourcesBuildPhase section */
 
 /* Begin PBXVariantGroup section */
-		0BC22C292B9E0A0B00EF07AC /* Main.storyboard */ = {
-			isa = PBXVariantGroup;
-			children = (
-				0BC22C2A2B9E0A0B00EF07AC /* Base */,
-			);
-			name = Main.storyboard;
-			sourceTree = "<group>";
-		};
 		0BC22C2E2B9E0A0D00EF07AC /* LaunchScreen.storyboard */ = {
 			isa = PBXVariantGroup;
 			children = (
@@ -293,10 +349,9 @@
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
 				GENERATE_INFOPLIST_FILE = YES;
-				INFOPLIST_FILE = "iOS12-HW17-Mikhailova Olga/Info.plist";
+				INFOPLIST_FILE = "iOS12-HW17-Mikhailova Olga/Resources/Info.plist";
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
-				INFOPLIST_KEY_UIMainStoryboardFile = Main;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				LD_RUNPATH_SEARCH_PATHS = (
@@ -320,10 +375,9 @@
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
 				GENERATE_INFOPLIST_FILE = YES;
-				INFOPLIST_FILE = "iOS12-HW17-Mikhailova Olga/Info.plist";
+				INFOPLIST_FILE = "iOS12-HW17-Mikhailova Olga/Resources/Info.plist";
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
-				INFOPLIST_KEY_UIMainStoryboardFile = Main;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				LD_RUNPATH_SEARCH_PATHS = (
