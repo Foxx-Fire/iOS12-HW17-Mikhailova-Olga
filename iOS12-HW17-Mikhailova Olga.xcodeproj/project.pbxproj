@@ -15,6 +15,7 @@
 		0BC22C3C2B9E0A5100EF07AC /* Builder.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0BC22C3B2B9E0A5100EF07AC /* Builder.swift */; };
 		0BC22C402B9E0AAF00EF07AC /* PasswordPresenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0BC22C3F2B9E0AAF00EF07AC /* PasswordPresenter.swift */; };
 		0BC22C432B9E0AEF00EF07AC /* BruteFunctionality.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0BC22C422B9E0AEF00EF07AC /* BruteFunctionality.swift */; };
+		0BCEF0282BA35DAE00CB15EF /* StringExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0BCEF0272BA35DAE00CB15EF /* StringExtension.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -28,6 +29,7 @@
 		0BC22C3B2B9E0A5100EF07AC /* Builder.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Builder.swift; sourceTree = "<group>"; };
 		0BC22C3F2B9E0AAF00EF07AC /* PasswordPresenter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PasswordPresenter.swift; sourceTree = "<group>"; };
 		0BC22C422B9E0AEF00EF07AC /* BruteFunctionality.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BruteFunctionality.swift; sourceTree = "<group>"; };
+		0BCEF0272BA35DAE00CB15EF /* StringExtension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StringExtension.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -80,6 +82,7 @@
 		0BC22C382B9E0A2C00EF07AC /* Sources */ = {
 			isa = PBXGroup;
 			children = (
+				0BCEF0262BA35D7A00CB15EF /* StringExtension */,
 				0BC22C412B9E0AD900EF07AC /* BruteFunctionality */,
 				0BC22C3E2B9E0A9400EF07AC /* PasswordPresenter */,
 				0BC22C3D2B9E0A5600EF07AC /* View */,
@@ -127,6 +130,14 @@
 				0BC22C422B9E0AEF00EF07AC /* BruteFunctionality.swift */,
 			);
 			path = BruteFunctionality;
+			sourceTree = "<group>";
+		};
+		0BCEF0262BA35D7A00CB15EF /* StringExtension */ = {
+			isa = PBXGroup;
+			children = (
+				0BCEF0272BA35DAE00CB15EF /* StringExtension.swift */,
+			);
+			path = StringExtension;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -200,6 +211,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				0BC22C282B9E0A0B00EF07AC /* ViewController.swift in Sources */,
+				0BCEF0282BA35DAE00CB15EF /* StringExtension.swift in Sources */,
 				0BC22C242B9E0A0B00EF07AC /* AppDelegate.swift in Sources */,
 				0BC22C262B9E0A0B00EF07AC /* SceneDelegate.swift in Sources */,
 				0BC22C402B9E0AAF00EF07AC /* PasswordPresenter.swift in Sources */,
