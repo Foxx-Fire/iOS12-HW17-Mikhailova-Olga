@@ -158,15 +158,17 @@ class ViewController: UIViewController {
 //MARK: Extension
 
 extension ViewController: ViewProcotol {
-    func setBrut(textField: String, label: String, bruting: String) {
+    
+    func setBrut(label: String) {
         DispatchQueue.main.async {
-            if label.isEmpty {
-                self.activity.startAnimating()
-                self.labelBrut.text = textField
-            } else {
-                self.label.text = label
-                self.textField.isSecureTextEntry = false
-            }
+            self.labelBrut.text = label
+        }
+    }
+    
+    func result(label: String) {
+        DispatchQueue.main.async {
+            self.label.text = label
+            self.textField.isSecureTextEntry = false
         }
     }
 }
